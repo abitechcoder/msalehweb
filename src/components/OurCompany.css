@@ -1,0 +1,19 @@
+h2 {
+  font-weight: 700;
+  color: #cc0000;
+  margin-bottom: 0 !important;
+}
+hr {
+  border: 1px solid gray !important;
+  width: 130px;
+  margin-top: 8px !important;
+}
+
+.container {
+  margin-top: 2%;
+}
+
+.container > p {
+  text-align: justify;
+  font-size: 1.2em;
+}
