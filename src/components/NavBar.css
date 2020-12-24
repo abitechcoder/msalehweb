@@ -16,6 +16,12 @@
   background: rgb(224, 221, 221);
 }
 
+.active {
+  color: red !important;
+  font-weight: 700;
+  background: rgb(224, 221, 221);
+}
+
 .nav__bar {
   margin-top: 0 !important;
   margin-bottom: 0 !important;

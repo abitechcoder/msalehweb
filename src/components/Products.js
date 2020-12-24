@@ -1,98 +1,56 @@
-import React from 'react';
-import { Card, CardDeck } from "react-bootstrap";
+import React from "react";
+import { Button } from "react-bootstrap";
 import "./Products.css";
 
 function Products() {
-    return (
-        <div>
-            <center>
-                <h2>Our Products</h2>
-                <hr/>
-            </center>
-            <div className="container">
-                <CardDeck>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p1.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p2.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p3.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p4.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p5.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p6.jpg" />
-                    </Card>
-                </CardDeck>
-                <CardDeck>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p7.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p8.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p9.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p10.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p11.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p12.jpg" />
-                    </Card>
-                </CardDeck>
-                <CardDeck> 
-                    <Card>
-                        <Card.Img variant="top" src="/images/p13.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p14.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p15.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p16.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p17.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p18.jpg" />
-                    </Card>
-                </CardDeck>
-                <CardDeck>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p19.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p20.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p21.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p22.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p23.jpg" />
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="/images/p24.jpg" />
-                    </Card>
-                </CardDeck>
-            </div> 
+  const images = [
+    "/images/p1.jpg",
+    "/images/p2.jpg",
+    "/images/p3.jpg",
+    "/images/p4.jpg",
+    "/images/p5.jpg",
+    "/images/p6.jpg",
+    "/images/p7.jpg",
+    "/images/p8.jpg",
+    "/images/p9.jpg",
+    "/images/p10.jpg",
+    "/images/p11.jpg",
+    "/images/p12.jpg",
+    // "/images/p13.jpg",
+    // "/images/p14.jpg",
+    // "/images/p15.jpg",
+    // "/images/p16.jpg",
+    // "/images/p17.jpg",
+    // "/images/p18.jpg",
+    // "/images/p19.jpg",
+    // "/images/p20.jpg",
+    // "/images/p21.jpg",
+    // "/images/p22.jpg",
+    // "/images/p23.jpg",
+    // "/images/p24.jpg",
+  ];
+  return (
+    <div>
+      <center>
+        <h2>Our Products</h2>
+        <hr />
+      </center>
+      <div className="container">
+        <div className="products">
+          {images.map((image) => {
+            return (
+              <div className="product">
+                <img src={image} />
+              </div>
+            );
+          })}
         </div>
-    )
+        <center className="top">
+          <Button variant="danger">See More...</Button>
+        </center>
+      </div>
+    </div>
+  );
 }
 
-export default Products
+export default Products;

@@ -1,0 +1,51 @@
+.footer {
+  background-color: black;
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.working__hours {
+  flex: 0.4;
+  padding: 5% 0;
+}
+
+.line__left {
+  border-left: 1px solid white;
+  padding-left: 50px;
+}
+
+.working__hours h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.working__hours p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.other__items {
+  flex: 0.6;
+  padding: 5% 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .line__left {
+    border-left: none;
+    padding-left: 0px;
+  }
+  .other__items {
+    display: none;
+  }
+  .working__hours {
+    flex: 1;
+  }
+}

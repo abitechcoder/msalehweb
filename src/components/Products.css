@@ -3,7 +3,7 @@ h2 {
   color: #cc0000;
   margin-bottom: 0 !important;
 }
-hr {
+center > hr {
   border: 1px solid gray !important;
   width: 130px;
   margin-top: 8px !important;
@@ -19,6 +19,16 @@ hr {
   font-size: 1.2em;
 }
 
-.card-deck {
-  margin-bottom: 3%;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product {
+  margin: 2%;
+}
+
+.top {
+  margin-top: 3%;
 }
