@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Products.css";
 
 function Products() {
@@ -37,16 +38,18 @@ function Products() {
       </center>
       <div className="container">
         <div className="products">
-          {images.map((image) => {
+          {images.map((image, index) => {
             return (
-              <div className="product">
-                <img src={image} />
+              <div key={index} className="product">
+                <img src={image} alt={"product" + index} />
               </div>
             );
           })}
         </div>
         <center className="top">
-          <Button variant="danger">See More...</Button>
+          <Link to="/products">
+            <Button variant="danger">See More...</Button>
+          </Link>
         </center>
       </div>
     </div>

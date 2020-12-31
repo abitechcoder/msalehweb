@@ -1,0 +1,22 @@
+.top-Img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about_txt > p {
+  line-height: 3.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .centered > h1 {
+    font-size: 25px;
+  }
+}

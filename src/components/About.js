@@ -1,16 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
-import "./OurCompany.css";
+import Image from "react-bootstrap/Image";
+import "./About.css";
 
-function OurCompany() {
+function About() {
   return (
-    <div>
-      <center>
-        <h2>Our Company</h2>
-        <hr />
-      </center>
-      <div className="container company__text">
+    <div className="top-M">
+      <div className="top-Img">
+        <Image id="about_img" src="/images/banner3.jpg" fluid />
+        <div className="centered">
+          <h1>&#8610; ABOUT US &#8611;</h1>
+        </div>
+      </div>
+      <div className="container about_txt">
         <p>
           <b>M. SALEH & COMPANY LIMITED</b> was incorporated since 1957 and has
           over 50 years experience in assembling Power generating sets and
@@ -22,10 +23,7 @@ function OurCompany() {
           critics' corner to the cash-register line; but to give variety and the
           best there is, so you can have a choice based on good judgement.
         </p>
-        <Link to="/about">
-          <Button variant="danger">Read More ...</Button>
-        </Link>
-        {/* <p>
+        <p>
           We have developed strong relationship and expertise in conjunction
           with best-in-class industrial sources e.g. Perkins, Cummins,
           Caterpillar, Volvo, Lister, Deutz, Doorman, Scania, Iveco, John Deer
@@ -37,10 +35,10 @@ function OurCompany() {
           We offer reliable products and dependable service back-up. All these
           and more, make-up the competitive differential advantages that have
           become synonymous with M.Saleh.
-        </p> */}
+        </p>
       </div>
     </div>
   );
 }
 
-export default OurCompany;
+export default About;

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
 function NavBar() {
@@ -12,7 +13,7 @@ function NavBar() {
           bg="light"
           variant="light"
         >
-          <div className="container nav__bar">
+          <div className="container-fluid nav__bar">
             <Navbar.Brand href="#home">
               <img src="/images/logo.png" alt="M.Saleh logo" id="logo" />
             </Navbar.Brand>
@@ -20,11 +21,25 @@ function NavBar() {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
               <Nav>
-                <Nav.Link className="active">HOME</Nav.Link>
-                <Nav.Link>ABOUT US</Nav.Link>
-                <Nav.Link>SERVICES</Nav.Link>
-                <Nav.Link>PRODUCTS</Nav.Link>
-                <Nav.Link>CONTACT US</Nav.Link>
+                <NavLink exact to="/" className="nav-link" role="button">
+                  HOME
+                </NavLink>
+
+                <NavLink to="/about" className="nav-link" role="button">
+                  ABOUT US
+                </NavLink>
+
+                {/* <NavLink to="/services" className="nav-link" role="button">
+                  SERVICES
+                </NavLink> */}
+
+                <NavLink to="/products" className="nav-link" role="button">
+                  PRODUCTS
+                </NavLink>
+
+                <NavLink to="/contact" className="nav-link" role="button">
+                  CONTACT US
+                </NavLink>
               </Nav>
             </Navbar.Collapse>
           </div>

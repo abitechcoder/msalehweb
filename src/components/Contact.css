@@ -1,0 +1,10 @@
+.l_content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.l_content > i {
+  margin-right: 10px;
+  color: red;
+}

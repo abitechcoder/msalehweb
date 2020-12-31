@@ -15,7 +15,7 @@ function Footer() {
             <p>This is a text</p>
             <p>This is a text</p>
             <p>This is a text</p>
-            <p>This is a text</p>v
+            <p>This is a text</p>
           </div>
 
           <div className="working__hours">
