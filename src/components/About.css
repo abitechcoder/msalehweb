@@ -16,6 +16,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .centered {
+    width: 400px;
+  }
   .centered > h1 {
     font-size: 25px;
   }
