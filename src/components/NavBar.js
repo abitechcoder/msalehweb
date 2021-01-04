@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
 function NavBar() {
@@ -14,8 +14,10 @@ function NavBar() {
           variant="light"
         >
           <div className="container-fluid nav__bar">
-            <Navbar.Brand href="#home">
-              <img src="/images/logo.png" alt="M.Saleh logo" id="logo" />
+            <Navbar.Brand>
+              <Link to="/">
+                <img src="/images/logo.png" alt="M.Saleh logo" id="logo" />
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
