@@ -35,6 +35,8 @@
 .other__items {
   flex: 0.6;
   padding: 5% 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 990px) {
@@ -48,4 +50,38 @@
   .working__hours {
     flex: 1;
   }
+}
+
+.link_head {
+  color: #fff;
+}
+
+.link_text {
+  margin-top: 15px;
+}
+
+.link_text > a {
+  color: #fff;
+}
+
+.link_text > a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.right_content {
+  margin-right: 10%;
+}
+
+.right_link_head {
+  margin-bottom: 10px !important;
+}
+
+.right_link_head > a {
+  color: #fff;
+}
+
+.right_link_head > a:hover {
+  text-decoration: none;
+  color: red;
 }

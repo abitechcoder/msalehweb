@@ -13,7 +13,7 @@ function NavBar() {
           bg="light"
           variant="light"
         >
-          <div className="container-fluid nav__bar">
+          <div className="container nav__bar">
             <Navbar.Brand>
               <Link to="/">
                 <img src="/images/logo.png" alt="M.Saleh logo" id="logo" />

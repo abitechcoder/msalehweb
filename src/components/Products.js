@@ -13,10 +13,10 @@ function Products() {
     "/images/p6.jpg",
     "/images/p7.jpg",
     "/images/p8.jpg",
-    "/images/p9.jpg",
-    "/images/p10.jpg",
-    "/images/p11.jpg",
-    "/images/p12.jpg",
+    // "/images/p9.jpg",
+    // "/images/p10.jpg",
+    // "/images/p11.jpg",
+    // "/images/p12.jpg",
     // "/images/p13.jpg",
     // "/images/p14.jpg",
     // "/images/p15.jpg",
@@ -46,7 +46,7 @@ function Products() {
             );
           })}
         </div>
-        <center className="top">
+        <center id="company" className="top">
           <Link to="/products">
             <Button variant="danger">See More...</Button>
           </Link>

@@ -8,7 +8,7 @@ function Home() {
   return (
     <React.Fragment>
       <Slider />
-      <center className="partners">
+      <center id="products" className="partners">
         <Image src="/images/partners.jpg" fluid />
       </center>
       <hr />
