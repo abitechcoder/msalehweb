@@ -32,6 +32,15 @@ function Contact() {
               tabindex="0"
             ></iframe>
             <Card.Body>
+              <Card.Text
+                style={{
+                  color: "red",
+                  fontWeight: "bold",
+                  marginBottom: "5px",
+                }}
+              >
+                HEAD OFFICE
+              </Card.Text>
               <Card.Title>
                 <strong>Port Harcourt Branch Office</strong>
               </Card.Title>
@@ -64,15 +73,6 @@ function Contact() {
               tabindex="0"
             ></iframe>
             <Card.Body>
-              <Card.Text
-                style={{
-                  color: "red",
-                  fontWeight: "bold",
-                  marginBottom: "5px",
-                }}
-              >
-                HEAD OFFICE
-              </Card.Text>
               <Card.Title>
                 <strong>Abuja Branch Office</strong>
               </Card.Title>

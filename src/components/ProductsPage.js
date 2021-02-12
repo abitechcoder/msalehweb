@@ -1,6 +1,8 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Image from "react-bootstrap/Image";
 import "./ProductsPage.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function ProductsPage() {
   const images = [
@@ -43,7 +45,11 @@ function ProductsPage() {
           {images.map((image, index) => {
             return (
               <div key={index} className="product">
-                <img src={image} alt={"product" + index} />
+                <LazyLoadImage
+                  effect="blur"
+                  src={image}
+                  alt={"product" + index}
+                />
               </div>
             );
           })}
